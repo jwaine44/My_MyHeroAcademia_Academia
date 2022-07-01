@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <title>My My Hero Academia Academia</title>
+</head>
+<body>
+    <div class="bar">
+        <h1 class="title">My <img src="\static\img\MHA_logo.png" alt="My Hero Academia logo" class="logo"> Academia</h1>
+    </div>
+    <div class="profile_linkbar">
+        <a href="/" class="link">Home</a>
+        <a href="/heroes" class="link">Pro Heroes</a>
+        <a href="/villains" class="link">Villains</a>
+        <a href="/quiz" class="link">Quiz</a>
+    </div>
+    <h2 class="profile_name">{{student.name}}</h2>
+    <div class="profile_container">
+        <img src="\static\img\profile\{{student.name}}.png" alt="{{student.name}}" class="profile_pic">
+        <div class="profile_info">
+            <table>
+                <tr>
+                    <h3 class="description">{{student.description}}</h3>
+                </tr>
+                <tr>
+                    <td><h2>Real Name:</h2></td>
+                    <td><h3>{{student.real_name}}</h3></td>
+                </tr>
+                <tr>
+                    <td><h2>Quirk:</h2></td>
+                    <td><h3>{{student.quirk}}</h3></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><h3>{{student.quirk_description}}</h3></td>
+                </tr>
+                <tr>
+                    <td><h2>Birthday:</h2></td>
+                    <td><h3>{{student.birthday}}</h3></td>
+                </tr>
+                <tr>
+                    <td><h2>Age:</h2></td>
+                    <td><h3>{{student.age}}</h3></td>
+                </tr>
+                <tr>
+                    <td><h2>Height:</h2></td>
+                    <td><h3>{{student.height}}</h3></td>
+                </tr>
+                <tr>
+                    <td><h2>Favorite Food:</h2></td>
+                    <td><h3>{{student.favorite_food}}</h3></td>
+                </tr>
+                <tr>
+                    <td><h2>Mentor:</h2></td>
+                    <td><h3>{{student.mentor_name}}</h3></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

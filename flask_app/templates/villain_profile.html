@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <title>My My Villain Academia Academia</title>
+</head>
+<body>
+    <div class="mva_bar">
+        <h1 class="mva_title">My <img src="\static\img\MVAlogonobackground.png" alt="My Villain Academia logo" class="mva_logo"> Academia</h1>
+    </div>
+    <div class="profile_linkbar">
+        <a href="/" class="mva_link">Home</a>
+        <a href="/students" class="mva_link">Student Heroes</a>
+        <a href="/heroes" class="mva_link">Pro Heroes</a>
+        <a href="/quiz" class="mva_link">Quiz</a>
+    </div>
+    <h2 class="mva_profile_name">{{villain.name}}</h2>
+    <div class="profile_container">
+        <img src="\static\img\profile\{{villain.name}}.png" alt="{{villain.name}}" class="profile_pic">
+        <div class="profile_info">
+            <table>
+                <tr>
+                    <h3 class="mva_description">{{villain.description}}</h3>
+                </tr>
+                <tr>
+                    <td><h2 class="mva_h2">Real Name:</h2></td>
+                    <td><h3 class="mva_h3">{{villain.real_name}}</h3></td>
+                </tr>
+                <tr>
+                    <td><h2 class="mva_h2">Quirk:</h2></td>
+                    <td><h3 class="mva_h3">{{villain.quirk}}</h3></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><h3 class="mva_h3">{{villain.quirk_description}}</h3></td>
+                </tr>
+                <tr>
+                    <td><h2 class="mva_h2">Birthday:</h2></td>
+                    <td><h3 class="mva_h3">{{villain.birthday}}</h3></td>
+                </tr>
+                <tr>
+                    <td><h2 class="mva_h2">Age:</h2></td>
+                    <td><h3 class="mva_h3">{{villain.age}}</h3></td>
+                </tr>
+                <tr>
+                    <td><h2 class="mva_h2">Height:</h2></td>
+                    <td><h3 class="mva_h3">{{villain.height}}</h3></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

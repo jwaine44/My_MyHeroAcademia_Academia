@@ -1,0 +1,246 @@
+* {
+    margin: 0 auto;
+    font-family: "Futura Display BQ Regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.bar {
+    height: 150px;
+    background-color: white;
+    text-align: center;
+}
+
+.mva_bar {
+    height: 150px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.logo {
+    margin-top: 10px;
+    height: 120px;
+}
+
+.mva_logo {
+    height: 130px;
+}
+
+.title {
+    color: red;
+    font-size: 70px;
+}
+
+.mva_title {
+    color: purple;
+    font-size: 70px;
+}
+
+.mva_text {
+    color: rgb(129, 69, 129);
+    width: 400px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.container {
+    width: 70%;
+    height: 400px;
+    padding-top: 10px;
+}
+
+.quiz_container {
+    width: 70%;
+    height: 400px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(223, 223, 55);
+    width: 400px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.mva_h2 {
+    color: rgb(129, 69, 129);
+    width: 400px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.headline {
+    color: rgb(223, 223, 55);
+    width: 400px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.mva_headline {
+    color: rgb(129, 69, 129);
+    width: 400px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.linkcontainer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 50px;
+}
+
+.purple {
+    color: rgb(129, 69, 129);
+    font-size: 25px;
+}
+
+a {
+    color: rgb(223, 223, 55);
+}
+
+a:hover {
+    animation: .8s shake infinite alternate;
+}
+
+@keyframes shake {
+    0% { transform: skewX(-15deg); }
+    5% { transform: skewX(15deg); }
+    10% { transform: skewX(-15deg); }
+    15% { transform: skewX(15deg); }
+    20% { transform: skewX(0deg); }
+    100% { transform: skewX(0deg); }  
+}
+
+.quizlinkcontainer {
+    margin-top: 40px;
+    text-align: center;
+    height: 100px;
+}
+
+.question {
+    width: fit-content;
+}
+
+.direction {
+    font-size: 30px;
+    color: rgb(223, 223, 55);
+    text-decoration: underline;
+}
+
+.rostercontainer {
+    height: 500px;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.box {
+    height: 200px;
+    width: 160px;
+    margin-top: 20px;
+}
+
+.linkbar {
+    height: 30px;
+    width: 1000px;
+    text-align: end;
+}
+
+.link {
+    padding-right: 20px;
+}
+
+.mva_link {
+    padding-right: 20px;
+    color: rgb(129, 69, 129);
+}
+
+.profile_linkbar {
+    height: 30px;
+    width: 1000px;
+    text-align: end;
+    margin-top: 10px;
+}
+
+.head {
+    height: 150px;
+    width: 150px;
+    border: solid 1px white;
+    border-radius: 5px;
+}
+
+.roster_name {
+    font-size: 25px;
+}
+
+.profile_name {
+    margin-top: 10px;
+    font-size: 70px;
+}
+
+.mva_profile_name {
+    margin-top: 10px;
+    font-size: 70px;
+    color: rgb(129, 69, 129);
+}
+
+.profile_container {
+    display: flex;
+    margin-top: 40px;
+    width: 80%;
+}
+
+.profile_info {
+    margin-left: -20px;
+}
+
+.profile_pic {
+    height: 573px;
+    width: 216px;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(223, 223, 55);
+}
+
+.mva_h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(129, 69, 129);
+}
+
+.description {
+    height: 150px;
+    margin-left: 50px;
+}
+
+.mva_description {
+    height: 150px;
+    margin-left: 50px;
+    color: rgb(129, 69, 129);
+}
+
+.question {
+    width: 250px;
+    height: 20px;
+    color: rgb(223, 223, 55);
+}
+
+.submit {
+    width: 200px;
+    font-size: 20px;
+}
+
+.msg {
+    color: crimson;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <title>My My Hero Academia Academia</title>
+</head>
+<body>
+    <div class="bar">
+        <h1 class="title">My <img src="\static\img\MHA_logo.png" alt="My Hero Academia logo" class="logo"> Academia</h1>
+    </div>
+    <div class="container">
+        <h2>Welcome to the ultimate source for learning about Japan's greatest student heroes, pro heroes, and the most dastardly villains!</h2>
+        <div class="linkcontainer">
+            <a href="/students">Student Heroes</a>
+            <a href="/heroes">Pro Heroes</a>
+            <a href="/villains">Villains</a>
+        </div>
+
+        <div class="quizlinkcontainer">
+            <h2 class="question">Think you have what it takes to go Plus Ultra?</h2><br><br>
+            <a href="/quiz" class="direction">Take the quiz!</a>
+        </div>
+    </div>
+</body>
+</html>

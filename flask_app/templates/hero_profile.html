@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <title>My My Hero Academia Academia</title>
+</head>
+<body>
+    <div class="bar">
+        <h1 class="title">My <img src="\static\img\MHA_logo.png" alt="My Hero Academia logo" class="logo"> Academia</h1>
+    </div>
+    <div class="profile_linkbar">
+        <a href="/" class="link">Home</a>
+        <a href="/students" class="link">Student Heroes</a>
+        <a href="/villains" class="link">Villains</a>
+        <a href="/quiz" class="link">Quiz</a>
+    </div>
+    <h2 class="profile_name">{{hero.name}}</h2>
+    <div class="profile_container">
+        <img src="\static\img\profile\{{hero.name}}.png" alt="{{hero.name}}" class="profile_pic">
+        <div class="profile_info">
+            <table>
+                <tr>
+                    <h3 class="description">{{hero.description}}</h3>
+                </tr>
+                <tr>
+                    <td><h2>Real Name:</h2></td>
+                    <td><h3>{{hero.real_name}}</h3></td>
+                </tr>
+                <tr>
+                    <td><h2>Rank:</h2></td>
+                    <td><h3>{{hero.rank}}</h3></td>
+                </tr>
+                <tr>
+                    <td><h2>Quirk:</h2></td>
+                    <td><h3>{{hero.quirk}}</h3></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><h3>{{hero.quirk_description}}</h3></td>
+                </tr>
+                <tr>
+                    <td><h2>Age:</h2></td>
+                    <td><h3>{{hero.age}}</h3></td>
+                </tr>
+                <tr>
+                    <td><h2>Height:</h2></td>
+                    <td><h3>{{hero.height}}</h3></td>
+                </tr>
+                <tr>
+                    <td><h2>Mentee:</h2></td>
+                    <td><h3>{{hero.mentee_name}}</h3></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

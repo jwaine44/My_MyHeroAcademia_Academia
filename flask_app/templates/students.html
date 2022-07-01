@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <title>My My Hero Academia Academia</title>
+</head>
+<body>
+    <div class="bar">
+        <h1 class="title">My <img src="\static\img\MHA_logo.png" alt="My Hero Academia logo" class="logo"> Academia</h1>
+    </div>
+    <div class="container">
+        <div class="linkbar">
+            <a href="/" class="link">Home</a>
+            <a href="/heroes" class="link">Pro Heroes</a>
+            <a href="/villains" class="link">Villains</a>
+            <a href="/quiz" class="link">Quiz</a>
+        </div>
+        <h1 class="headline">Student Heroes</h1>
+        <h2>The heroes of tomorrow, studying at Japan's most prestigious hero school, UA High!</h2><br>
+        <h2>Click on a student to learn more!</h2>
+        <div class="rostercontainer">
+            {% for student in students: %}
+                <div class="box">
+                    <a href="/students/{{student.name}}"><img src="\static\img\head\{{student.name}}.png" alt="{{student.name}}" class="head"></a>
+                    <a href="/students/{{student.name}}" class="roster_name">{{student.name}}</a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

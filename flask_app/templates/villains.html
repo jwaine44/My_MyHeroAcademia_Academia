@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <title>My My Villain Academia Academia</title>
+</head>
+<body>
+    <div class="mva_bar">
+        <h1 class="mva_title">My <img src="\static\img\MVAlogonobackground.png" alt="My Villain Academia logo" class="mva_logo"> Academia</h1>
+    </div>
+    <div class="container">
+        <div class="linkbar">
+            <a href="/" class="mva_link">Home</a>
+            <a href="/students" class="mva_link">Student Heroes</a>
+            <a href="/heroes" class="mva_link">Pro Heroes</a>
+            <a href="/quiz" class="mva_link">Quiz</a>
+        </div>
+        <h1 class="mva_headline">Villains</h1>
+        <h2 class="mva_text">Japan's most evil villains, seeking to commit crime and cause disasters all around the country!</h2><br>
+        <h2 class="mva_text">Click on a villain to learn more!</h2>
+        <div class="rostercontainer">
+            {% for villain in villains: %}
+                <div class="box">
+                    <a href="/villains/{{villain.name}}"><img src="\static\img\head\{{villain.name}}.png" alt="{{villain.name}}" class="head"></a>
+                    <a href="/villains/{{villain.name}}" class="purple">{{villain.name}}</a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

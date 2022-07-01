@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <title>My My Hero Academia Academia Quiz</title>
+</head>
+<body>
+    <div class="bar">
+        <h1 class="title">My <img src="\static\img\MHA_logo.png" alt="My Hero Academia logo" class="logo"> Academia</h1>
+    </div>
+    <div class="quiz_container">
+        <div class="linkbar">
+            <a href="/" class="link">Home</a>
+            <a href="/students" class="link">Student Heroes</a>
+            <a href="/heroes" class="link">Pro Heroes</a>
+            <a href="/villains" class="link">Villains</a>
+        </div>
+        
+        <h2>Quiz Time!</h2>
+        <h2>Think you're Plus Ultra in your knowledge?</h2>
+        <h2>Take the quiz and find out!</h2><br><br>
+        <form action="/quiz/submit" method="POST">
+            <div>
+                <label for="question_1" name="question_1" id="question_1"><h2>Question 1:</h2>
+                    {% for message in get_flashed_messages(category_filter=["answer_question_1"]): %}
+                        <h2 class="msg">{{message}}</h2>
+                    {% endfor %}
+                    <br>
+                    <h2>Who is the shortest character listed in My My Hero Academia Academia?</h2></label><br><br>
+                <input type="text" name="question_1" class="question"><br><br>
+            </div>
+
+            <div>
+                <label for="question_2" name="question_2" id="question_2"><h2>Question 2:</h2>
+                    {% for message in get_flashed_messages(category_filter=["answer_question_2"]): %}
+                        <h2 class="msg">{{message}}</h2>
+                    {% endfor %}
+                    <br>
+                    <h2>What is the name of Edgeshot's quirk?</h2></label><br><br>
+                <input type="text" name="question_2" class="question"><br><br>
+            </div>
+
+            <div>
+                <label for="question_3" name="question_3" id="question_3"><h2>Question 3:</h2>
+                    {% for message in get_flashed_messages(category_filter=["answer_question_3"]): %}
+                        <h2 class="msg">{{message}}</h2>
+                    {% endfor %}
+                    <br>
+                    <h2>How old is Gentle Criminal?</h2></label><br><br>
+                <input type="text" name="question_3" class="question"><br><br>
+            </div>
+
+            <div>
+                <label for="question_4" name="question_4" id="question_4"><h2>Question 4:</h2>
+                    {% for message in get_flashed_messages(category_filter=["answer_question_4"]): %}
+                        <h2 class="msg">{{message}}</h2>
+                    {% endfor %}
+                    <br>
+                    <h2>Which student aims to achieve the heroic heights of his older brother?</h2></label><br><br>
+                <input type="text" name="question_4" class="question"><br><br>
+            </div>
+
+            <div>
+                <label for="question_5" name="question_5" id="question_1"><h2>Question 5:</h2>
+                    {% for message in get_flashed_messages(category_filter=["answer_question_5"]): %}
+                        <h2 class="msg">{{message}}</h2>
+                    {% endfor %}
+                    <br>
+                    <h2>Which student is Wash's mentee?</h2></label><br><br>
+                <input type="text" name="question_5" class="question"><br><br>
+            </div>
+
+            <div>
+                <input type="submit" value="Submit" class="submit"><br><br>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
