@@ -1,9 +1,6 @@
 # My My Hero Academia Academia - Jared Waine's Python stack project
-<<<<<<< HEAD
+
 This project was created using the following technologies: Python, Flask, HTML, MySQL, Jinja, and CSS. Please refer to the Screenshots folder for some visuals of the project in action.
-=======
-This project was created using the following technologies: Python, Flask, HTML, MySQL, Jinja, and CSS
->>>>>>> 0a220b9d5a06e4f06d7f0ca05ca7c79ffefbad99
 
 ## About
 This project is intended for letting users learn about the various characters of the anime "My Hero Academia."
